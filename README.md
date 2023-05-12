@@ -1,4 +1,4 @@
-# © P R Harshith Portfolio Website 2023
+# © P R Harshith Portfolio Website [Github-Pages] 2023
 
 © ALL RIGHTS RESERVED BY P R HARSHITH 2023. 
 
