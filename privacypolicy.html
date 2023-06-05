@@ -9,13 +9,13 @@
 </head>
 <body>
     <div class="ovflw">
-<button class="button-88" onclick="myFunction()">Dark/Light Mode Switch</button>
+<!--<button class="button-88" onclick="myFunction()">Dark/Light Mode Switch</button> AUTOMATIC DARKMODE ADDED SO NO NEED OF TOGGLE BUTTON!!-->
 <!--<a href="https://prharshith.tk"></a>-->
 <!--form action="https://prharshith.tk"> </form>--><br><button class="button-87" role="button" onclick="window.location.href='index.html';">Return To Homepage</button>
 
 
 <h1>Privacy Policy</h1>
-<p>Last updated: 10<sup>th</sup> May 2023 at 4:24 PM [GMT +5:30]</p>
+<p>Last updated: 5<sup>th</sup> June 2023 at 7:32 PM [GMT +5:30]</p>
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
 <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/" target="_blank">Free Privacy Policy Generator</a>.</p>
 <h1>Interpretation and Definitions</h1>
@@ -206,7 +206,7 @@
 <ul>
 <li>By email: <b>privacypolicy@prharshith.tk</b></li>
 </ul>
-<br>
+<br><br>
 
 
 <style>
@@ -284,29 +284,89 @@ body{
 a{
 color: #12b473;
 }
-    
-.dark-mode {
-  background-color: black;
-  color: white;
-}
 
 </style>
 
+<style>
+@media (prefers-color-scheme: dark) {
+ *{ 
+ background-color: black;
+  color: white;
+}
 
+}
+</style>
 <style>@import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap&amp;subset=cyrillic");</style>
 
-
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
 <style>
     div.ovflw {
   overflow: clip;
 }
 </style>
 </div>
+
+<center>
+<button class="button"onclick="window.location.href='#';">Go To Top</button>
+</center>
+
+<style>
+.button {
+ --color: #00A97F;
+ padding: 13px 10px 13px 10px;
+ background-color: transparent;
+ border-radius: .3em;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ transition: .5s;
+ font-weight: 400;
+ font-size: 17px;
+ border: 2px solid;
+font-family: "Rubik", sans-serif;
+ color: var(--color);
+ z-index: 1;
+}
+
+.button::before, .button::after {
+ content: '';
+ display: block;
+ width: 50px;
+ height: 50px;
+ transform: translate(-50%, -50%);
+ position: absolute;
+ border-radius: 50%;
+ z-index: -1;
+ background-color: var(--color);
+ transition: .5s ease;
+}
+
+.button::before {
+ top: -1em;
+ left: -1em;
+}
+
+.button::after {
+ left: calc(100% + 1em);
+ top: calc(100% + 1em);
+}
+
+.button:hover::before, .button:hover::after {
+ height: 410px;
+ width: 410px;
+}
+
+.button:hover {
+ color: rgb(10, 25, 30);
+}
+
+.button:active {
+ filter: brightness(.8);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
 </body>
 </html>
