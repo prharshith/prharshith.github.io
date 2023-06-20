@@ -2147,7 +2147,6 @@ body.dark .blog-page-section .blog-single {
 
 .timeline.edu .timeline-container::after {
   content: "";
-  background: #FFF;
   font-family: "simple-line-icons";
   font-size: 24px;
   color: #FF4C60;
@@ -2159,7 +2158,7 @@ body.dark .blog-page-section .blog-single {
 
 .timeline.exp .timeline-container::after {
   content: "";
-  background: #FFF;
+
   font-family: "simple-line-icons";
   font-size: 24px;
   color: #FF4C60;
