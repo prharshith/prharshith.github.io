@@ -305,7 +305,7 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
 					<div class="fact-item">
 						<span class="icon icon-rocket"></span>
 						<div class="details">
-							<h3 class="mb-0 mt-0 number"><em class="count">4</em></h3>
+							<h3 class="mb-0 mt-0 number"><em class="count">5</em></h3>
 							<p class="mb-0">Projects completed</p>
 						</div>
 					</div>
@@ -315,7 +315,7 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
 				<div class="col-md-3 col-sm-6">
 					<!-- fact item -->
 					<div class="fact-item">
-						<span class="icon icon-doc"></span>
+						<span class="icon icon-docs"></span>
 						<div class="details">
 							<h3 class="mb-0 mt-0 number"><em class="count">1</em></h3>
 							<p class="mb-0">Papers Published</p>
@@ -649,7 +649,7 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
 						<!-- timeline item -->
 						<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
 							<div class="content">
-								<span class="time">International Journal of Engineering Research & Technology [IJERT] - JUN 2023</span>
+								<span class="time">International Journal of Engineering Research & Technology [IJERT] - June 2023</span>
 								<h3 class="title hover-underline-animation"><a href="https://www.ijert.org/new-technology-crimes-reinforcing-the-forensic-laboratory-to-manoeuvre-ultra-electronic-delinquencies" target="_blank">New Technology Crimes – Reinforcing the Forensic Laboratory to Manoeuvre Ultra-Electronic Delinquencies</a></h3>
 								<p>This paper presents proposals for enhancing forensic laboratories to address the evolving nature of electronic crimes.</p>
 							</div>
@@ -1341,6 +1341,24 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
 <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 
 <style>
+
+textarea{
+resize: none;
+}
+
+  ::-moz-selection{
+    color: white;
+    background: #20c997;
+  }
+
+  ::selection {
+    color: white;
+    background: #20c997;
+  }
+
+</style>
+
+<style>
 @media (prefers-color-scheme: dark) {
 
   p{
@@ -1481,18 +1499,7 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
   header.mobile-header-2{
   background-color: #1F2933;
   }
-  
-  
-  ::-moz-selection{
-    color: white;
-    background: #20c997;
-  }
-
-  ::selection {
-    color: white;
-    background: #20c997;
-  }
-  
+    
   /* removed image brightness
   
   div.thumb{
@@ -1500,9 +1507,8 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
   }
  
   */
-
-
-.hover-underline-animation {
+  
+  .hover-underline-animation {
   display: inline-block;
   position: relative;
   color: 
@@ -1527,6 +1533,39 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
   transform-origin: bottom left;
 }
   
+}
+</style>
+
+
+<!--LIGHT UNDERLINE CSS-->
+
+
+<style>
+@media (prefers-color-scheme: light) {
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: 
+#0087ca;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 }
 </style>
 
