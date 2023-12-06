@@ -1,0 +1,81 @@
+<!--
+<center><h6>Switch To Dark Theme?<br> <a href="darkmode/index.html"><u>Switch Theme</u></a></h6></center>
+<br>-->
+<!--
+<center><h6>The Time Now in India is:   <span id="indiatime"></span></center>
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var dx=d.toGMTString();
+dx=dx.substr(0,dx.length -3);
+d.setTime(Date.parse(dx))
+d.setSeconds(d.getSeconds() + 19800);
+
+
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" am";nhour=12;}
+else if(nhour<12){ap=" am";}
+else if(nhour==12){ap=" pm";}
+else if(nhour>12){ap=" pm";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('indiatime').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+<center><h6>The Date in India is:   <span id="indiadate"></span></center>
+<script type="text/javascript">
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var dx=d.toGMTString();
+dx=dx.substr(0,dx.length -3);
+d.setTime(Date.parse(dx))
+d.setSeconds(d.getSeconds() + 19800);
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+
+var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+document.getElementById('indiadate').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+</h6>
+
+
+<style>
+#indiadate{
+
+font-size: 20px;
+color: #03C988;
+}
+
+#indiatime{
+
+font-size: 20px;
+color: #03C988;
+}
+</style>-->
+<!--<center>
+<h6 id="footer-h6"> Website Owned and Maintained By:<br> <a href="https://prharshith.pages.dev"><u>P R HARSHITH</u></a></h6>
+
+<h6>Translate this page:</h6>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</center>-->
