@@ -949,7 +949,7 @@ section.home.light .social-icons li a:hover {
 }
 .section-title:before {
   content: "";
-  background-image: url(../images/dots-bg.svg);
+  /*background-image: url(../images/dots-bg.svg);*/
   display: block;
   height: 37px;
   left: -14px;
@@ -1668,7 +1668,7 @@ select.portfolio-filter-mobile {
 /*                      CONTACT                              
 /*=================================================================*/
 .contact-info {
-  background-image: url("../images/map.svg");
+  /*background-image: url("../images/map.svg");*/
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 200px;
