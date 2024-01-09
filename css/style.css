@@ -1200,7 +1200,7 @@ section.home.light .social-icons li a:hover {
 .portfolio-filter li {
   color: #5E5C7F;
   cursor: pointer;
-  font-family: "Rubik", sans-serif;
+  font-family: "Lexend Deca", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   font-weight: 700;
   position: relative;
