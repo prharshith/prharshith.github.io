@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRH PGP Public Key</title>
+    <style>
+        body {
+            font-family: 'Lexend Deca', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f9; /* Light mode background */
+            color: #333; /* Light mode text color */
+            min-height: 100vh;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for mode switch */
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 20px;
+            padding: 20px;
+            background: white; /* Light mode container background */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        h1 {
+            font-size: 1.4em; /* Reduced size */
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 0.9em; /* Reduced size */
+            margin-bottom: 20px;
+            color: #666;
+        }
+        pre {
+            background: #f1f1f1; /* Light mode pre background */
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            white-space: pre-wrap; /* Allows line breaks */
+            text-align: left;
+            font-size: 0.9em;
+            color: #000;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-family: 'Lexend Deca', sans-serif; /* Apply Lexend Deca font */
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f9; /* Light mode footer background */
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        footer a {
+            color: #007BFF; /* Light mode link color */
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dark mode styles */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #151515; /* Dark mode background */
+                color: #e0e0e0; /* Dark mode text color */
+            }
+
+            h2{
+                color: #e0e0e0;
+            }
+
+            .container {
+                background: #2d2d2d; /* Dark mode container background */
+                box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            }
+            pre {
+                background: #333; /* Dark mode pre background */
+                border: 1px solid #444;
+                color: #e0e0e0;
+            }
+            footer {
+                background-color: #151515; /* Dark mode footer background */
+            }
+            footer a {
+                color: #1E90FF; /* Dark mode link color */
+            }
+            footer a:hover {
+                text-decoration: underline;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h1>P R Harshith's PGP Public Key</h1>
+        <h2>Use the below key to encrypt your message and send the encrypted message to me using your preferred messaging platform or email :)</h2>
+        <pre id="pgp-key">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: User-ID:	P R HARSHITH &lt;prharshith38@gmail.com&gt;
+Comment: Valid from:	26-08-2024 04:30 PM
+Comment: Type:	255-bit EdDSA (secret key available)
+Comment: Usage:	Signing, Encryption, Certifying User-IDs
+Comment: Fingerprint:	2C286FB3933EFA2CD07FA15AA8F8630DFAD71868
+
+mDMEZsxgMxYJKwYBBAHaRw8BAQdABechJdeSotCkV1U7o5A/ilbfa20VHDtV3+rt
+lvYkZL+0JVAgUiBIQVJTSElUSCA8cHJoYXJzaGl0aDM4QGdtYWlsLmNvbT6IkwQT
+FgoAOxYhBCwob7OTPvos0H+hWqj4Yw361xhoBQJmzGAzAhsDBQsJCAcCAiICBhUK
+CQgLAgQWAgMBAh4HAheAAAoJEKj4Yw361xhoj7sA/3SpTtzXXIuEYHOwqAVlZMBU
+tykbnXaUUahjQMtxQvWFAP9mDzcsfaFlWEwI6WtZfYLBFWI07fO17d7pP0BUYEg3
+Brg4BGbMYDMSCisGAQQBl1UBBQEBB0CThG8m2qzyJVHUACXhI2qYDbVd70jZZosa
+B0//wvRGEgMBCAeIeAQYFgoAIBYhBCwob7OTPvos0H+hWqj4Yw361xhoBQJmzGAz
+AhsMAAoJEKj4Yw361xhowooA/28FSuw1R9TSYt3zZ7lnWLIlJTnsWQwWP8kmT61F
+blrRAQDL8zb3ZEUJgyqHgX4fTM886Kdbw4xtiwLjWa5ZQ34IAQ==
+=Yavo
+-----END PGP PUBLIC KEY BLOCK-----
+        </pre>
+        <button onclick="copyToClipboard()">Copy PGP Key to Clipboard</button>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> <b>P R Harshith</b><br> This webpage is licensed under <a href="https://github.com/prharshith/prh-pgp-key"> GNU Affero General Public License V3</a></p>
+    </footer>
+
+    <script>
+        function copyToClipboard() {
+            // Select the text
+            var pgpKeyText = document.getElementById('pgp-key').innerText;
+            navigator.clipboard.writeText(pgpKeyText).then(function() {
+                alert('The PGP Key has been copied to clipboard successfully!');
+            }).catch(function(err) {
+                alert('Failed to copy key: ' + err);
+            });
+        }
+
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
